@@ -1,9 +1,31 @@
 # AGENTS.md Files
 
-## Existing
+## Layer 2: System Prompts (Codex Harness)
+Main prompts (codex-rs/core/):
+- `gpt_5_1_prompt.md` - GPT-5.1 system prompt
+- `gpt-5.1-codex-max_prompt.md` - GPT-5 Codex Max system prompt
+- `gpt_5_codex_prompt.md` - GPT-5 Codex system prompt
+- `prompt.md` - Generic system prompt
+- `review_prompt.md` - Code review guidelines
+
+Templates (codex-rs/core/templates/):
+- `parallel/instructions.md` - Parallel tool use instructions
+- `sandboxing/assessment_prompt.md` - Sandbox risk assessment
+- `compact/prompt.md` - History compaction prompt
+- `compact/summary_prefix.md` - Summary prefix template
+- `review/history_message_interrupted.md` - Review interrupted message
+- `review/history_message_completed.md` - Review completed message
+
+Tool instructions:
+- `codex-rs/apply-patch/apply_patch_tool_instructions.md`
+- `codex-rs/tui/prompt_for_init_command.md`
+
+## Layer 3: User Instructions
+
+### Existing
 - `/home/user/codex-63.0/AGENTS.md` (Rust conventions)
 
-## Potential Locations
+### Potential Locations
 Global:
 - `~/.codex/AGENTS.md`
 - `~/.codex/AGENTS.override.md`
