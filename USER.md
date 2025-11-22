@@ -1,8 +1,10 @@
 # AGENTS.md Files - Quick Reference
 
-**📋 For detailed analysis, see:**
+**📋 Documentation:**
+- **QUICKSTART.md** - ⭐ Start here - what to read first
 - **SUMMARY.md** - Complete overview of all findings
 - **FILETREE.md** - Visual file tree + code flow
+- **ARCHITECTURE.md** - Detailed code architecture & prompt flow
 - **PROMPT-SURGERY.md** - Analysis of pussy-footing patterns
 - **EDITS.md** - Exact surgical edits to apply
 - **TEMPLATES.md** - Ready-to-use AGENTS.md templates
