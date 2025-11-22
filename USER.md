@@ -1,8 +1,16 @@
-# AGENTS.md Files
+# AGENTS.md Files - Quick Reference
+
+**📋 For detailed analysis, see:**
+- **SUMMARY.md** - Complete overview of all findings
+- **FILETREE.md** - Visual file tree + code flow
+- **PROMPT-SURGERY.md** - Analysis of pussy-footing patterns
+- **EDITS.md** - Exact surgical edits to apply
+- **TEMPLATES.md** - Ready-to-use AGENTS.md templates
+- **TESTING.md** - Build & validation after changes
+
+---
 
 ## Layer 2: System Prompts (Codex Harness)
-
-See FILETREE.md for visual layout and detailed analysis.
 
 Main prompts (codex-rs/core/) - pick one based on model:
 - `gpt_5_1_prompt.md` - GPT-5.1 system prompt (369 lines)
@@ -59,9 +67,11 @@ Per-crate:
 - Lines 154-155: `windows_wsl_setup_acknowledged`
 - Line 221: `enable_experimental_windows_sandbox`
 
-**Directories**:
-- `codex-rs/windows-sandbox-rs/` - Windows sandbox impl
-- `codex-rs/linux-sandbox/` - Linux sandbox impl
+**Directories (moved to .cut/):**
+- `.cut/codex-rs/WINDOWS.windows-sandbox-rs/` - Windows sandbox impl
+- `.cut/codex-rs/core/src/MACOS.seatbelt*` - macOS Seatbelt files
+- `.cut/DEPRECATED.codex-cli/` - Legacy TypeScript CLI
+- `codex-rs/linux-sandbox/` - Linux sandbox impl (still in tree)
 - `codex-rs/process-hardening/` - Platform-specific hardening
 
 ## Discovery
