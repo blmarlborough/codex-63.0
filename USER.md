@@ -1,24 +1,27 @@
 # AGENTS.md Files
 
 ## Layer 2: System Prompts (Codex Harness)
-Main prompts (codex-rs/core/):
-- `gpt_5_1_prompt.md` - GPT-5.1 system prompt
-- `gpt-5.1-codex-max_prompt.md` - GPT-5 Codex Max system prompt
-- `gpt_5_codex_prompt.md` - GPT-5 Codex system prompt
-- `prompt.md` - Generic system prompt
-- `review_prompt.md` - Code review guidelines
 
-Templates (codex-rs/core/templates/):
-- `parallel/instructions.md` - Parallel tool use instructions
+See FILETREE.md for visual layout and detailed analysis.
+
+Main prompts (codex-rs/core/) - pick one based on model:
+- `gpt_5_1_prompt.md` - GPT-5.1 system prompt (369 lines)
+- `gpt-5.1-codex-max_prompt.md` - GPT-5 Codex Max (118 lines)
+- `gpt_5_codex_prompt.md` - GPT-5 Codex (106 lines)
+- `prompt.md` - Generic fallback (311 lines)
+- `review_prompt.md` - Code review guidelines (88 lines)
+
+Templates (codex-rs/core/templates/) - injected at runtime:
+- `parallel/instructions.md` - Parallel tool use rules
 - `sandboxing/assessment_prompt.md` - Sandbox risk assessment
-- `compact/prompt.md` - History compaction prompt
-- `compact/summary_prefix.md` - Summary prefix template
-- `review/history_message_interrupted.md` - Review interrupted message
-- `review/history_message_completed.md` - Review completed message
+- `compact/prompt.md` - History compaction
+- `compact/summary_prefix.md` - Summary prefix
+- `review/history_message_interrupted.md`
+- `review/history_message_completed.md`
 
 Tool instructions:
-- `codex-rs/apply-patch/apply_patch_tool_instructions.md`
-- `codex-rs/tui/prompt_for_init_command.md`
+- `codex-rs/apply-patch/apply_patch_tool_instructions.md` - Patch format
+- `codex-rs/tui/prompt_for_init_command.md` - AGENTS.md generator
 
 ## Layer 3: User Instructions
 
@@ -41,16 +44,25 @@ Per-crate:
 - `/home/user/codex-63.0/docs/AGENTS.md`
 
 ## Mac/Windows Fluff
-AGENTS.md:
-- Lines 9-10: Seatbelt (`/usr/bin/sandbox-exec`) - macOS only
 
-Config (docs/example-config.md):
-- Line 154-155: `windows_wsl_setup_acknowledged`
+**AGENTS.md** (Layer 3):
+- Lines 9-10: Seatbelt (`/usr/bin/sandbox-exec`) - macOS sandbox
+
+**System prompts** (Layer 2):
+- Lines referencing GUI apps: `open` (macOS), `xdg-open` (Linux), `osascript` (macOS)
+  - gpt-5.1-codex-max_prompt.md:183
+  - gpt_5_1_prompt.md:183
+  - gpt_5_codex_prompt.md:49
+  - prompt.md:174
+
+**Config** (docs/example-config.md):
+- Lines 154-155: `windows_wsl_setup_acknowledged`
 - Line 221: `enable_experimental_windows_sandbox`
 
-Directories:
-- `/home/user/codex-63.0/codex-rs/windows-sandbox-rs/`
-- `/home/user/codex-63.0/codex-rs/process-hardening/`
+**Directories**:
+- `codex-rs/windows-sandbox-rs/` - Windows sandbox impl
+- `codex-rs/linux-sandbox/` - Linux sandbox impl
+- `codex-rs/process-hardening/` - Platform-specific hardening
 
 ## Discovery
 Priority: AGENTS.override.md → AGENTS.md → fallbacks (config: `project_doc_fallback_filenames`)
