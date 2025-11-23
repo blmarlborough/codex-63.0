@@ -5,10 +5,11 @@
 - **SUMMARY.md** - Complete overview of all findings
 - **FILETREE.md** - Visual file tree + code flow
 - **ARCHITECTURE.md** - Detailed code architecture & prompt flow
-- **PROMPT-SURGERY.md** - Analysis of pussy-footing patterns
+- **PROMPT-SURGERY.md** - Analysis of timid behavior patterns
 - **EDITS.md** - Exact surgical edits to apply
 - **TEMPLATES.md** - Ready-to-use AGENTS.md templates
 - **TESTING.md** - Build & validation after changes
+- **AUTOMATION-GUIDE.md** - ⭐ Strategies to enhance Codex autonomy
 
 ---
 

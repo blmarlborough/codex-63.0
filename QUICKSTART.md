@@ -7,7 +7,7 @@
 3. **Apply 1 edit** - Pick the most annoying behavior, fix it in your target prompt file
 4. **Rebuild & test** - `cd codex-rs && cargo build --release`
 
-That's it. You'll immediately see less pussy-footing.
+That's it. You'll immediately see more decisive, autonomous behavior.
 
 ---
 

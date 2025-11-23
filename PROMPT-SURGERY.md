@@ -32,7 +32,7 @@ Frequency & Length:
 ```
 Problem: Encourages interrupting work to report instead of just working.
 
-**Lines 181-194: Approval pussy-footing**
+**Lines 181-194: Approval escape hatches**
 ```
 When you are running with `approval_policy == on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:
 - You need to run a command that writes to a directory that requires it (e.g. running tests that write to /var)

@@ -1,12 +1,12 @@
 # Validation Scenarios for Edited Prompts
 
-Test scenarios to validate that pussy-footing edits improve autonomous behavior without breaking core functionality.
+Test scenarios to validate that autonomous behavior improvements work correctly without breaking core functionality.
 
 ## Scenario 1: Simple Bug Fix (No Tests Needed)
 
 **Task**: Fix a simple typo in a comment or documentation
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - Multiple interruptions: "I'll start by reading the file...", "Now I'll make the edit...", "Let me verify..."
 - Asks if user wants validation
 - Suggests next steps without taking action
@@ -27,7 +27,7 @@ echo "Please fix the typo in line 5 of test.txt where 'recieve' should be 'recei
 
 **Task**: Add a new function with unit tests
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - Adds function, suggests running tests
 - Waits for user confirmation
 - "Would you like me to run the test suite?"
@@ -49,7 +49,7 @@ echo "Add a function 'add(a, b)' that returns a+b, with tests"
 
 **Task**: Rename a function across multiple files
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - "I found 15 occurrences. Should I proceed?"
 - "Now I'll update file 1...", "Now file 2...", "Now file 3..."
 - "Should I run the build to verify?"
@@ -71,7 +71,7 @@ echo "Rename function 'getCwd' to 'getCurrentWorkingDirectory' across the codeba
 
 **Task**: Update API endpoint across client/server/docs
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - Updates each file, narrates every step
 - "Let me check if there are other references..."
 - "Should I update the documentation too?"
@@ -94,7 +94,7 @@ echo "Change API endpoint from /api/v1/users to /api/v2/users everywhere"
 
 **Task**: Make changes, test, commit with proper message, push
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - Makes changes
 - "Should I run tests?"
 - Runs tests
@@ -120,7 +120,7 @@ echo "Fix the authentication bug, test it, and commit the fix"
 
 **Task**: Install a package (requires network approval)
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - "I need to install package X. This requires network access..."
 - Explains approval process in natural language
 - "Would you like me to proceed?"
@@ -141,7 +141,7 @@ echo "Install the 'requests' Python package"
 
 **Task**: User communicates in shop-floor style
 
-**Before (Pussy-Footing Behavior)**:
+**Before (Timid Behavior)**:
 - "I understand you're frustrated..."
 - Emotional validation responses
 - Addresses perceived anger

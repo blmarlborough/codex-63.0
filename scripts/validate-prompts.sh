@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Validate that pussy-footing edits were applied correctly
+# Validate that timid behavior edits were applied correctly
 
 set -euo pipefail
 
@@ -14,7 +14,7 @@ PASS=0
 FAIL=0
 
 echo -e "${YELLOW}=== Codex Prompt Validation ===${NC}"
-echo "Checking for pussy-footing patterns in system prompts..."
+echo "Checking for timid behavior patterns in system prompts..."
 echo
 
 # Check function: looks for anti-patterns
@@ -55,7 +55,7 @@ check_positive() {
     fi
 }
 
-echo -e "${YELLOW}Checking for removed pussy-footing patterns:${NC}"
+echo -e "${YELLOW}Checking for removed timid behavior patterns:${NC}"
 echo
 
 # Check 1: Friendly tone removed
@@ -147,7 +147,7 @@ echo
 
 if [ $FAIL -eq 0 ]; then
     echo -e "${GREEN}✓ All validations passed!${NC}"
-    echo "System prompts have been successfully edited to remove pussy-footing patterns."
+    echo "System prompts have been successfully edited to remove timid behavior patterns."
     exit 0
 else
     echo -e "${RED}✗ Some validations failed${NC}"
