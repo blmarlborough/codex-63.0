@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Apply pussy-footing edits to Codex system prompts
+# Remove timid/cautious patterns from Codex system prompts
 
 set -euo pipefail
 
@@ -119,7 +119,7 @@ case "${1:-apply}" in
         ;;
     *)
         echo "Usage: $0 {apply|restore}"
-        echo "  apply   - Apply pussy-footing edits to system prompts"
+        echo "  apply   - Remove timid/cautious patterns from system prompts"
         echo "  restore - Restore original prompts from .orig backups"
         exit 1
         ;;

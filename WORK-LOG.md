@@ -67,7 +67,7 @@
 ### Analysis Documents
 
 **PROMPT-SURGERY.md** (171 lines)
-- Identified top 10 pussy-footing patterns
+- Identified top 10 timid behavior patterns
 - Line-by-line analysis of all 5 main prompts
 - Categorized by behavior type:
   - Escape hatches ("unless", "if")
@@ -78,7 +78,7 @@
   - Brevity handcuffs
 - Problem severity rankings
 
-**Commit:** `d8cbdb9` - "Add prompt pussy-footing analysis"
+**Commit:** `d8cbdb9` - "Add prompt timid behavior analysis"
 
 **EDITS.md** (198 lines)
 - Exact before/after surgical edits for each prompt file
@@ -92,7 +92,7 @@
 - Corresponding edits for other prompt variants
 - Rebuild instructions
 
-**Commit:** `7b2751d` - "Add exact surgical edits to eliminate pussy-footing"
+**Commit:** `7b2751d` - "Add exact surgical edits to eliminate timid patterns"
 
 **ARCHITECTURE.md** (462 lines)
 - Complete code flow from user request → API call → tool execution
@@ -168,7 +168,7 @@
 - Complete overview of all work done
 - Key findings organized:
   - Layer 2 system prompts (5 main + 6 templates)
-  - Top 10 pussy-footing patterns
+  - Top 10 timid behavior patterns
   - Approval/sandbox flow
 - What to do next (immediate, medium, long term)
 - Files modified/created/moved
@@ -228,7 +228,7 @@ All commits in chronological order:
 5. `e94052e` - Update USER.md with detailed Layer 2 analysis
 6. `2930e98` - Add Rust source mapping and model→prompt table
 7. `ee4c3e0` - Isolate platform-specific and deprecated files to .cut/
-8. `d8cbdb9` - Add prompt pussy-footing analysis (PROMPT-SURGERY.md)
+8. `d8cbdb9` - Add prompt timid behavior analysis (PROMPT-SURGERY.md)
 9. `7b2751d` - Add exact surgical edits (EDITS.md)
 10. `858dbab` - Add Layer 3 AGENTS.md templates (TEMPLATES.md)
 11. `82364a0` - Add testing and build guide (TESTING.md)
@@ -316,7 +316,7 @@ These were not done, but could be:
 
 ✅ Identified all Layer 2 system prompts
 ✅ Documented exact file locations
-✅ Analyzed all pussy-footing patterns
+✅ Analyzed all timid behavior patterns
 ✅ Created surgical edit guide
 ✅ Provided ready-to-use templates
 ✅ Documented build & test process

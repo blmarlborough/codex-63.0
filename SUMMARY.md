@@ -25,8 +25,8 @@
 - Platform-specific code locations
 
 **PROMPT-SURGERY.md** - Problem analysis
-- Identified top 10 pussy-footing patterns across 5 main prompts
-- Line-by-line analysis of timid behaviors
+- Identified top 10 timid behavior patterns across 5 main prompts
+- Line-by-line analysis of cautious behaviors
 - Categorized by pattern type (approval, updates, testing, etc.)
 
 **EDITS.md** - Exact fixes
@@ -57,7 +57,7 @@
 ### Layer 2 System Prompts (Editable)
 
 **5 main prompts** (pick one based on model):
-1. `gpt_5_1_prompt.md` - GPT-5.1 (369 lines) - Most verbose, most pussy-footing
+1. `gpt_5_1_prompt.md` - GPT-5.1 (369 lines) - Most verbose, most timid patterns
 2. `gpt-5.1-codex-max_prompt.md` - GPT-5 Codex Max (118 lines) - Shorter, similar patterns
 3. `gpt_5_codex_prompt.md` - GPT-5 Codex (106 lines) - Minimal version
 4. `prompt.md` - Generic fallback (311 lines) - Used by most other models
@@ -130,7 +130,7 @@
    cargo build --release
    ```
 
-4. **Test with known pussy-footing scenario:**
+4. **Test with known timid behavior scenario:**
    ```bash
    ./target/release/codex
    # Task: "Fix the Nix hash for package X and rebuild"
@@ -203,7 +203,7 @@ Commits:
 5. `e94052e` - Update USER.md with detailed Layer 2 analysis
 6. `2930e98` - Add Rust source mapping and model→prompt table
 7. `ee4c3e0` - Isolate platform-specific and deprecated files to .cut/
-8. `d8cbdb9` - Add prompt pussy-footing analysis (PROMPT-SURGERY.md)
+8. `d8cbdb9` - Add prompt timid behavior analysis (PROMPT-SURGERY.md)
 9. `7b2751d` - Add exact surgical edits (EDITS.md)
 10. `858dbab` - Add Layer 3 AGENTS.md templates (TEMPLATES.md)
 11. `82364a0` - Add testing and build guide (TESTING.md)
