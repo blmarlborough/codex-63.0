@@ -50,6 +50,15 @@
 - Debugging guide for build issues
 - Regression testing procedure
 
+**AUTOMATION-GUIDE.md** - Enhanced autonomy strategies
+- 6 layers of automation opportunities beyond prompt edits
+- Runtime configuration options (sandbox policies, auto-testing)
+- Tool function enhancements (batch operations, smart patches)
+- Workflow hooks for automatic actions
+- AGENTS.md automation directives
+- Learning from user approval patterns
+- Implementation roadmap and priority phases
+
 ---
 
 ## Key Findings

@@ -9,6 +9,7 @@
 - **EDITS.md** - Exact surgical edits to apply
 - **TEMPLATES.md** - Ready-to-use AGENTS.md templates
 - **TESTING.md** - Build & validation after changes
+- **AUTOMATION-GUIDE.md** - ⭐ Strategies to enhance Codex autonomy
 
 ---
 
